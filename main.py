@@ -11,7 +11,7 @@ FILE_PATH = "./data/Medium_Clean.csv"
 PROCESSED_FILE_PATH = "./data/medium_stories_processed.csv"
 SAVE_MODEL_PATH = "./data/preds.json"
 N_TAGS = 50
-KEYWORDS_PER_TAG = 20
+KEYWORDS_PER_TAG = 40
 TEST_SIZE = 0.2
 THRESHOLDS = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
 
@@ -31,7 +31,7 @@ if __name__=="__main__":
         results.append(res)
 
     res_df = pd.DataFrame(results)
-    res_df.to_csv("./data/results.csv", index=False)
+    res_df.to_csv("./data/results_40.csv", index=False)
         
 
     
